@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230509 21:29:28.294" rpa="false" schemaversion="3">
+<suite id="s1" name="TesteqaRobot" source="C:\TesteqaRobot">
+<suite id="s1-s1" name="Teste" source="C:\TesteqaRobot\Teste.robot">
+<test id="s1-s1-t1" name="Adicionar novo usuário com sucesso" line="15">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230509 21:29:28.449" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Register.html'.</msg>
+<msg timestamp="20230509 21:29:28.456" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230509 21:29:28.448" endtime="20230509 21:29:35.272"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@placeholder='First Name']</arg>
+<arg>${FIRST_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230509 21:29:35.274" level="INFO">Typing text 'Leandro' into text field 'xpath://input[@placeholder='First Name']'.</msg>
+<status status="PASS" starttime="20230509 21:29:35.273" endtime="20230509 21:29:35.412"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@placeholder='Last Name']</arg>
+<arg>${LAST_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230509 21:29:35.413" level="INFO">Typing text 'Silva' into text field 'xpath://input[@placeholder='Last Name']'.</msg>
+<status status="PASS" starttime="20230509 21:29:35.412" endtime="20230509 21:29:35.511"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://textarea[@ng-model='Adress']</arg>
+<arg>${ADDRESS}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230509 21:29:35.512" level="INFO">Typing text 'Rua Barretos' into text field 'xpath://textarea[@ng-model='Adress']'.</msg>
+<status status="PASS" starttime="20230509 21:29:35.512" endtime="20230509 21:29:35.659"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@type='email']</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230509 21:29:35.662" level="INFO">Typing text 'leandrodomingos35@hotmail.com' into text field 'xpath://input[@type='email']'.</msg>
+<status status="PASS" starttime="20230509 21:29:35.660" endtime="20230509 21:29:35.790"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@type='tel']</arg>
+<arg>${PHONE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230509 21:29:35.792" level="INFO">Typing text '1234567890' into text field 'xpath://input[@type='tel']'.</msg>
+<status status="PASS" starttime="20230509 21:29:35.791" endtime="20230509 21:29:35.913"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230509 21:29:35.914" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20230509 21:29:35.913" endtime="20230509 21:29:36.022"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Registration Successful</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<msg timestamp="20230509 21:29:41.329" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230509 21:29:41.330" level="FAIL">Text 'Registration Successful' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20230509 21:29:36.023" endtime="20230509 21:29:41.335"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230509 21:29:41.336" endtime="20230509 21:29:41.336"/>
+</kw>
+<status status="FAIL" starttime="20230509 21:29:28.447" endtime="20230509 21:29:41.336">Text 'Registration Successful' did not appear in 5 seconds.</status>
+</test>
+<doc>Adicionar novo usuário com sucesso</doc>
+<status status="FAIL" starttime="20230509 21:29:28.316" endtime="20230509 21:29:41.339"/>
+</suite>
+<status status="FAIL" starttime="20230509 21:29:28.297" endtime="20230509 21:29:41.342"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TesteqaRobot">TesteqaRobot</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Teste">TesteqaRobot.Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

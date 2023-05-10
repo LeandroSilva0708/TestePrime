@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230510 08:37:26.667" rpa="false" schemaversion="3">
+<suite id="s1" name="Teste" source="C:\TesteqaRobot\Teste.robot">
+<test id="s1-t1" name="Caso de Teste 1 – Adicionar novo usuário com sucesso" line="23">
+<status status="FAIL" starttime="20230510 08:37:26.811" endtime="20230510 08:37:26.812">Test contains no keywords.</status>
+</test>
+<test id="s1-t2" name="Dado que o usuário esteja no site https://demo.automationtesting.in/Register.html" line="24">
+<status status="FAIL" starttime="20230510 08:37:26.812" endtime="20230510 08:37:26.812">Test contains no keywords.</status>
+</test>
+<test id="s1-t3" name="Quando preencher todos os dados com dados válidos" line="25">
+<status status="FAIL" starttime="20230510 08:37:26.812" endtime="20230510 08:37:26.813">Test contains no keywords.</status>
+</test>
+<test id="s1-t4" name="E clicar no botão Submit" line="26">
+<status status="FAIL" starttime="20230510 08:37:26.813" endtime="20230510 08:37:26.813">Test contains no keywords.</status>
+</test>
+<test id="s1-t5" name="Então o sistema deve apresentar a tela com a mensagem de sucesso" line="27">
+<status status="FAIL" starttime="20230510 08:37:26.813" endtime="20230510 08:37:26.813">Test contains no keywords.</status>
+</test>
+<test id="s1-t6" name="Adicionar novo usuário com sucesso" line="29">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230510 08:37:26.814" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Register.html'.</msg>
+<msg timestamp="20230510 08:37:26.820" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230510 08:37:26.813" endtime="20230510 08:37:37.202"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@placeholder='First Name']</arg>
+<arg>${FIRST_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 08:37:37.203" level="INFO">Typing text 'Leandro' into text field 'xpath://input[@placeholder='First Name']'.</msg>
+<status status="PASS" starttime="20230510 08:37:37.202" endtime="20230510 08:37:37.333"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@placeholder='Last Name']</arg>
+<arg>${LAST_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 08:37:37.333" level="INFO">Typing text 'Silva' into text field 'xpath://input[@placeholder='Last Name']'.</msg>
+<status status="PASS" starttime="20230510 08:37:37.333" endtime="20230510 08:37:37.420"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://textarea[@ng-model='Adress']</arg>
+<arg>${ADDRESS}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 08:37:37.421" level="INFO">Typing text 'Rua Barretos 90' into text field 'xpath://textarea[@ng-model='Adress']'.</msg>
+<status status="PASS" starttime="20230510 08:37:37.421" endtime="20230510 08:37:37.511"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@type='email']</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 08:37:37.511" level="INFO">Typing text 'leandrodomingos35@hotmail.com' into text field 'xpath://input[@type='email']'.</msg>
+<status status="PASS" starttime="20230510 08:37:37.511" endtime="20230510 08:37:37.603"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@type='tel']</arg>
+<arg>${PHONE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 08:37:37.603" level="INFO">Typing text '1234567890' into text field 'xpath://input[@type='tel']'.</msg>
+<status status="PASS" starttime="20230510 08:37:37.603" endtime="20230510 08:37:37.696"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://input[@value='Male']</arg>
+<arg>${GENDER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 08:37:37.696" level="INFO">Clicking element 'xpath://input[@value='Male']' with Male.</msg>
+<msg timestamp="20230510 08:37:37.853" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230510 08:37:37.854" level="FAIL">ValueError: 'MALE' modifier does not match to Selenium Keys</msg>
+<status status="FAIL" starttime="20230510 08:37:37.696" endtime="20230510 08:37:37.858"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='checkbox1']</arg>
+<arg>${HOBBY_MOVIES}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230510 08:37:37.858" endtime="20230510 08:37:37.858"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230510 08:37:37.858" endtime="20230510 08:37:37.858"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230510 08:37:37.858" endtime="20230510 08:37:37.858"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Registration Successful</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20230510 08:37:37.858" endtime="20230510 08:37:37.859"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230510 08:37:37.859" endtime="20230510 08:37:37.859"/>
+</kw>
+<status status="FAIL" starttime="20230510 08:37:26.813" endtime="20230510 08:37:37.859">ValueError: 'MALE' modifier does not match to Selenium Keys</status>
+</test>
+<doc>Adicionar novo usuário com sucesso</doc>
+<status status="FAIL" starttime="20230510 08:37:26.669" endtime="20230510 08:37:37.860"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="6" skip="0" id="s1" name="Teste">Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
